@@ -1,0 +1,63 @@
+2025-10-29 14:27:32,068 - __main__ - INFO - ============================================================
+2025-10-29 14:27:32,069 - __main__ - INFO - Decision Assistant Pipeline Starting
+2025-10-29 14:27:32,069 - __main__ - INFO - ============================================================
+2025-10-29 14:27:32,070 - __main__ - INFO - Seeds set for reproducibility (seed=42, PYTHONHASHSEED=42)
+2025-10-29 14:27:32,070 - __main__ - INFO - 
+[1/10] Generating synthetic panel data...
+2025-10-29 14:27:33,237 - __main__ - INFO - Generated 24000 rows across 10 months
+2025-10-29 14:27:33,238 - __main__ - INFO -   Time: 1.17s
+2025-10-29 14:27:33,238 - __main__ - INFO - 
+[2/10] Performing temporal split...
+2025-10-29 14:27:33,246 - __main__ - INFO - Train: 18000 rows, Val: 4000 rows, Test: 2000 rows
+2025-10-29 14:27:33,246 - __main__ - INFO -   Time: 0.01s
+2025-10-29 14:27:33,247 - __main__ - INFO - 
+[3/10] Validating temporal integrity...
+2025-10-29 14:27:36,686 - __main__ - INFO - [OK] Temporal integrity validated
+2025-10-29 14:27:36,687 - __main__ - INFO -   Time: 3.44s
+2025-10-29 14:27:36,687 - __main__ - INFO - 
+[4/10] Preparing features...
+2025-10-29 14:27:36,712 - modeling - WARNING - Excluding leakage columns: ['post_event_flag']
+2025-10-29 14:27:36,754 - __main__ - INFO - [OK] Prepared 13 features (leakage excluded)
+2025-10-29 14:27:36,754 - __main__ - INFO -   Time: 0.07s
+2025-10-29 14:27:36,755 - __main__ - INFO - 
+[5/10] Training XGBoost with hyperparameter search...
+2025-10-29 14:27:36,757 - modeling - INFO - Baseline AUC-PR (constant prediction): 0.9487
+2025-10-29 14:27:38,446 - modeling - INFO - Trial 1/30: New best val AUC-PR = 0.9522
+2025-10-29 14:27:38,738 - modeling - INFO - Trial 2/30: New best val AUC-PR = 0.9525
+2025-10-29 14:27:39,972 - modeling - INFO - Trial 4/30: New best val AUC-PR = 0.9532
+2025-10-29 14:27:47,106 - modeling - INFO - Trial 18/30: New best val AUC-PR = 0.9547
+2025-10-29 14:27:53,766 - modeling - INFO - Best validation AUC-PR: 0.9547
+2025-10-29 14:27:53,767 - modeling - INFO - Best parameters: {'max_depth': 7, 'min_child_weight': 4, 'gamma': 0.4, 'reg_alpha': 0.5, 'reg_lambda': 2.0, 'subsample': 0.9, 'colsample_bytree': 1.0, 'learning_rate': 0.1, 'n_estimators': 100}
+2025-10-29 14:27:53,767 - __main__ - INFO - [OK] Training complete. Best params: {'max_depth': 7, 'min_child_weight': 4, 'gamma': 0.4, 'reg_alpha': 0.5, 'reg_lambda': 2.0, 'subsample': 0.9, 'colsample_bytree': 1.0, 'learning_rate': 0.1, 'n_estimators': 100}
+2025-10-29 14:27:53,768 - __main__ - INFO -   Time: 17.01s
+2025-10-29 14:27:53,780 - __main__ - INFO - Validation AUC-PR: 0.9547
+2025-10-29 14:27:53,780 - __main__ - INFO - 
+[6/10] Evaluating model on test set...
+2025-10-29 14:27:53,794 - __main__ - INFO -   Time: 0.01s
+2025-10-29 14:27:53,800 - __main__ - INFO - [OK] Metrics saved to out\metrics.json
+2025-10-29 14:27:53,800 - __main__ - INFO -   AUC-PR: 0.9625
+2025-10-29 14:27:53,800 - __main__ - INFO -   Precision@1%: 0.9500
+2025-10-29 14:27:53,801 - __main__ - INFO -   Precision@5%: 0.9700
+2025-10-29 14:27:53,801 - __main__ - INFO - 
+[7/10] Generating SHAP global bar plot...
+2025-10-29 14:27:53,818 - modeling - WARNING - SHAP failed (ValueError: could not convert string to float: '[9.507222E-1]'), using feature importance instead
+2025-10-29 14:27:54,359 - modeling - INFO - Feature importance plot saved to out\shap_global_bar.png
+2025-10-29 14:27:54,359 - __main__ - INFO -   Time: 0.56s
+2025-10-29 14:27:54,359 - __main__ - INFO - 
+[8/10] Generating lapse prevention plans...
+2025-10-29 14:27:54,377 - __main__ - INFO - [OK] Lapse plans saved to out\lapse_plans.json
+2025-10-29 14:27:54,378 - __main__ - INFO -   Time: 0.02s
+2025-10-29 14:27:54,378 - __main__ - INFO - 
+[9/10] Generating lead conversion plans...
+2025-10-29 14:27:54,395 - __main__ - INFO - [OK] Lead plans saved to out\lead_plans.json
+2025-10-29 14:27:54,395 - __main__ - INFO -   Time: 0.02s
+2025-10-29 14:27:54,396 - __main__ - INFO - 
+[10/10] Saving model...
+2025-10-29 14:27:54,403 - __main__ - INFO - [OK] Model saved to out\model.pkl
+2025-10-29 14:27:54,403 - __main__ - INFO -   Time: 0.01s
+2025-10-29 14:27:54,404 - __main__ - INFO - 
+============================================================
+2025-10-29 14:27:54,404 - __main__ - INFO - Pipeline completed successfully!
+2025-10-29 14:27:54,404 - __main__ - INFO - Total runtime: 22.3 seconds (0.4 minutes)
+2025-10-29 14:27:54,405 - __main__ - INFO - Output directory: C:\Users\omerb\OneDrive\שולחן העבודה\Atidot\out
+2025-10-29 14:27:54,405 - __main__ - INFO - ============================================================

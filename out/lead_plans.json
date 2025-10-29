@@ -1,0 +1,35 @@
+{
+  "lead_001": {
+    "attributes": {
+      "lead_id": "lead_001",
+      "age": 32,
+      "region": "North",
+      "channel": "online",
+      "needs": "family coverage",
+      "objections": "price concerns"
+    },
+    "plan": "Step 1: The frequency and timing of touchpoints significantly impact lead conversion. [Doc2]\nStep 2: Common objections include price concerns, timing issues, coverage adequacy, and trust barriers. [Doc3]\nStep 3: Effective lead conversion requires tailored messaging that resonates with specific customer segments. [Doc1]"
+  },
+  "lead_002": {
+    "attributes": {
+      "lead_id": "lead_002",
+      "age": 55,
+      "region": "Center",
+      "channel": "phone",
+      "needs": "comprehensive protection",
+      "objections": "timing not right"
+    },
+    "plan": "Step 1: The frequency and timing of touchpoints significantly impact lead conversion. [Doc2]\nStep 2: Common objections include price concerns, timing issues, coverage adequacy, and trust barriers. [Doc3]\nStep 3: Effective lead conversion requires tailored messaging that resonates with specific customer segments. [Doc1]"
+  },
+  "lead_003": {
+    "attributes": {
+      "lead_id": "lead_003",
+      "age": 28,
+      "region": "South",
+      "channel": "email",
+      "needs": "basic coverage",
+      "objections": "need validation"
+    },
+    "plan": "Step 1: The frequency and timing of touchpoints significantly impact lead conversion. [Doc2]\nStep 2: Common objections include price concerns, timing issues, coverage adequacy, and trust barriers. [Doc3]\nStep 3: Effective lead conversion requires tailored messaging that resonates with specific customer segments. [Doc1]"
+  }
+}

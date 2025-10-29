@@ -1,0 +1,14 @@
+{
+  "1657": {
+    "probability": 0.6417171955108643,
+    "plan": "Predicted lapse probability: 64.2%\n\nStep 1: Insurance lapse patterns vary seasonally. [Doc5]\nStep 2: Personalized agent outreach significantly reduces lapse rates, especially for high-value customers. [Doc2]\nStep 3: Insurance policies typically include a grace period during which customers can make late payments without immediate policy cancellation. [Doc1]"
+  },
+  "1537": {
+    "probability": 0.9572798609733582,
+    "plan": "Predicted lapse probability: 95.7%\n\nStep 1: Insurance lapse patterns vary seasonally. [Doc5]\nStep 2: Personalized agent outreach significantly reduces lapse rates, especially for high-value customers. [Doc2]\nStep 3: Insurance policies typically include a grace period during which customers can make late payments without immediate policy cancellation. [Doc1]"
+  },
+  "1595": {
+    "probability": 0.9938696622848511,
+    "plan": "Predicted lapse probability: 99.4%\n\nStep 1: Insurance lapse patterns vary seasonally. [Doc5]\nStep 2: Personalized agent outreach significantly reduces lapse rates, especially for high-value customers. [Doc2]\nStep 3: Insurance policies typically include a grace period during which customers can make late payments without immediate policy cancellation. [Doc1]"
+  }
+}
