@@ -1,0 +1,3 @@
+# Channel-Specific Best Practices
+
+Each channel requires tailored approaches. Digital channels (website, social media) benefit from instant quotes, chatbots, and self-service options. Phone sales require warm introduction, rapport building, and active listening. Email campaigns need compelling subject lines, clear CTAs, and mobile-responsive design. In-person agents excel at relationship building and addressing complex needs. Direct mail works for older demographics with clear offers and easy response mechanisms. Integrate channels for omnichannel experience that adapts to lead preferences and behavior.

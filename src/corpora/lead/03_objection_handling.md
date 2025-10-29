@@ -1,0 +1,3 @@
+# Objection Handling Framework
+
+Common objections include price concerns, timing issues, coverage adequacy, and trust barriers. Address price objections by highlighting value and offering flexible payment options or discounts. Timing objections require understanding lead's situation and proposing solutions that accommodate their timeline. Coverage concerns need detailed explanation of policy features and customization options. Trust issues require social proof, testimonials, and transparent communication about company stability. Anticipate objections proactively in initial conversations and prepare data-driven responses.

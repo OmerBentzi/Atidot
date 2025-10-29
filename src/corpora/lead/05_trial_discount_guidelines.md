@@ -1,0 +1,3 @@
+# Trial and Discount Guidelines
+
+Offer trial periods or discounted initial premiums to reduce purchase barriers. Typical trial periods range from 30-90 days with full refund option if not satisfied. Discount strategies include first-year discounts (10-20%), bundled policy discounts, or referral incentives. Set clear eligibility criteria and terms to prevent abuse. Monitor trial-to-paid conversion rates and adjust offers based on profitability analysis. Use discounts strategically rather than as default to preserve pricing integrity. Ensure discount terms are clearly communicated and legally compliant.
